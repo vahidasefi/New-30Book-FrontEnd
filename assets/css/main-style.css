@@ -1,0 +1,449 @@
+/*
+Main style for new 30book ui
+Created by Vahid Asefi
+ */
+@import "../fonts/iranyekan/css/fontiran.css";
+@import "../fonts/iransans/css/fontiran.css";
+
+/*
+General Styles
+=============================================
+*/
+::selection {
+    background: #00bcd4;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+body {
+    background-color: #fafafa;
+    min-width: 1200px !important;
+}
+
+/*
+Custom Button Definitions
+=============================================
+*/
+button.uk-button-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+/*
+Some Text Color Definitions
+=============================================
+*/
+.uk-text-white {
+    color: #fff !important;
+}
+
+.uk-text-black {
+    color: #222 !important;
+}
+
+/*
+Custom padding and margin
+=============================================
+*/
+.uk-padding-5 {
+    padding: 5px;
+}
+
+.uk-padding-10 {
+    padding: 10px;
+}
+
+.uk-padding-15 {
+    padding: 15px;
+}
+
+.uk-padding-20 {
+    padding: 20px;
+}
+
+.uk-padding-v5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.uk-padding-v10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.uk-padding-v15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.uk-padding-v20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.uk-padding-h5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.uk-padding-h10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.uk-padding-h15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.uk-padding-h20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*
+Definition of some fixed width
+=============================================
+*/
+.uk-fixed-width-50 {
+    width: 50px;
+}
+
+.uk-fixed-width-75 {
+    width: 75px;
+}
+
+.uk-fixed-width-100 {
+    width: 100px;
+}
+
+.uk-fixed-width-125 {
+    width: 125px;
+}
+
+.uk-fixed-width-150 {
+    width: 150px;
+}
+
+.uk-fixed-width-175 {
+    width: 175px;
+}
+
+.uk-fixed-width-200 {
+    width: 200px;
+}
+
+.uk-fixed-width-225 {
+    width: 225px;
+}
+
+.uk-fixed-width-250 {
+    width: 250px;
+}
+
+.uk-fixed-width-275 {
+    width: 275px;
+}
+
+.uk-fixed-width-300 {
+    width: 300px;
+}
+
+.uk-fixed-width-325 {
+    width: 325px;
+}
+
+.uk-fixed-width-350 {
+    width: 350px;
+}
+
+.uk-fixed-width-375 {
+    width: 375px;
+}
+
+.uk-fixed-width-400 {
+    width: 400px;
+}
+
+.uk-fixed-width-425 {
+    width: 425px;
+}
+
+.uk-fixed-width-450 {
+    width: 450px;
+}
+
+.uk-fixed-width-475 {
+    width: 475px;
+}
+
+.uk-fixed-width-500 {
+    width: 500px;
+}
+
+.uk-fixed-width-525 {
+    width: 525px;
+}
+
+.uk-fixed-width-550 {
+    width: 550px;
+}
+
+.uk-fixed-width-575 {
+    width: 575px;
+}
+
+.uk-fixed-width-600 {
+    width: 600px;
+}
+
+.uk-fixed-width-700 {
+    width: 700px;
+}
+
+.uk-fixed-width-800 {
+    width: 800px;
+}
+
+/*
+Some Default Background Colors
+=============================================
+*/
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-green {
+    background-color: #8fbe00;
+}
+
+.bg-gray-1 {
+    background-color: #555555;
+}
+
+.bg-gray-2 {
+    background-color: #888888;
+}
+
+.bg-gray-3 {
+    background-color: #aaaaaa;
+}
+
+.bg-gray-4 {
+    background-color: #eeeeee;
+}
+
+.bg-gray-5 {
+    background-color: #f2f2f2;
+}
+
+/*
+#Header general style
+=============================================
+*/
+#header {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/*
+Header Top Banner Style
+=============================================
+*/
+.header-top-banner {
+    line-height: 0;
+}
+
+.top-banner-wrapper {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70px;
+    width: 100%;
+}
+
+/*
+Header Top Main Style
+=============================================
+*/
+.header-top-main {
+    border-bottom: solid 1px #eeeeee;
+    height: 30px;
+    line-height: 30px;
+}
+
+.top-right-nav ul {
+    list-style: none;
+}
+
+.top-right-nav ul li {
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+
+.top-left-nav ul {
+    list-style: none;
+}
+
+.top-left-nav ul li {
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+
+.top-left-nav ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-right: solid 1px #ccc;
+    padding: 0 15px;
+}
+
+.top-left-nav ul li:last-child a {
+    border-right: none;
+}
+
+.top-left-nav ul li a:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+/*
+Header Main Style
+=============================================
+*/
+.search-wrapper {
+    padding-top: 35px;
+}
+
+.search-submit-button {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-basket {
+    padding-top: 35px;
+}
+
+/*
+Header bottom style
+=============================================
+*/
+.header-bottom {
+    height: 50px;
+    border-top: solid 1px #eeeeee;
+}
+
+.category-dropdown-button {
+    height: 50px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.category-dropdown-button.uk-open, .category-dropdown-button:hover, .category-dropdown-button:active, .category-dropdown-button:focus {
+    color: #666 !important;
+    background-color:#f8f8f8;
+    border-color:#eeeeee;
+}
+
+.uk-mega-card {
+    transition: all 0.05s;
+    position: relative;
+    height: 340px;
+}
+
+.uk-mega-card > ul.uk-mega-dropdown-nav {
+    width: 170px;
+    padding-left: 10px;
+    border-left: solid 1px #eee;
+    height: 100%;
+}
+
+.uk-mega-dropdown-nav > li > a > span[uk-icon^='fa-'] {
+    vertical-align: bottom;
+}
+
+.uk-mega-dropdown-nav > li > a.uk-button > span[uk-icon^='fa-'] {
+    vertical-align: initial;
+}
+
+.uk-mega-dropdown-nav > li > a > span[uk-icon^='fa-'] svg {
+    width: 20px;
+    height: 20px;
+}
+
+.uk-mega-dropdown-nav > li.uk-nav-has-child a {
+    position: relative;
+}
+
+.uk-mega-dropdown-nav > li.uk-nav-has-child a i {
+    position: absolute;
+    left: 4px;
+    top: 8px;
+}
+
+.uk-sub-category-container {
+    /*background-color:#f8f8f8;*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 680px;
+    height: 260px;
+}
+
+.uk-mega-card.expanded {
+    width: 900px;
+}
+
+.uk-sub-category-title {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #eee;
+}
+
+.uk-nav-stock-book-button {
+    color: #ffffff !important;
+    margin-top: 10px;
+
+}
+
+.main-menu-wrapper {
+    height: 50px;
+}
+
+.main-menu-wrapper > ul > li > a {
+    height:50px;
+    min-height:auto;
+}
+.main-menu > li > a{
+    padding: 0 25px;
+}
+
+.uk-secondary-nav-dropdown-button{
+    height:50px;
+    border-top:none;
+    border-bottom:none;
+}
+.uk-partnership-button{
+    color: #ffffff !important;
+    margin-top:10px;
+}
+.uk-secondary-nav-dropdown-button:hover, .uk-secondary-nav-dropdown-button:active, .uk-secondary-nav-dropdown-button:focus {
+    color: #666 !important;
+    background-color:#f8f8f8;
+    border-color:#eeeeee;
+}
+
+/*
+Main section General styles
+=============================================
+*/
