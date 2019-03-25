@@ -14,6 +14,9 @@ General Styles
     color: #ffffff;
     text-shadow: none;
 }
+a.uk-link:hover{
+    text-decoration: none;
+}
 
 body {
     background-color: #fafafa;
@@ -237,6 +240,61 @@ Some Default Background Colors
     background-color: #f2f2f2;
 }
 
+.bg-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.bg-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+.bg-instagram {
+    background-color: #125688;
+    color: white;
+}
+
+.bg-google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.bg-telegram {
+    background-color: #45bbff;
+    color: white;
+}
+
+.social-button:hover {
+    color: #ffffff;
+}
+
+.app-download {
+    transition: all 0.3s;
+}
+
+.bg-app-store {
+    background-color: #222222;
+    color: white;
+    border: solid 1px #222222;
+}
+
+.bg-google-play {
+    background-color: #4aa84e;
+    color: white;
+    border: solid 1px #4aa84e;
+}
+
+.bg-google-play:hover {
+    background-color: transparent;
+    color: #4aa84e;
+}
+
+.bg-app-store:hover {
+    background-color: transparent;
+    color: #222222;
+}
+
 /*
 #Header general style
 =============================================
@@ -348,15 +406,15 @@ Header bottom style
 
 .category-dropdown-button.uk-open, .category-dropdown-button:hover, .category-dropdown-button:active, .category-dropdown-button:focus {
     color: #666 !important;
-    background-color:#f8f8f8;
-    border-color:#eeeeee;
+    background-color: #f8f8f8;
+    border-color: #eeeeee;
 }
 
 .uk-mega-card {
     transition: all 0.05s;
     position: relative;
     height: 340px;
-    border-top:solid 3px #2ed5ea;
+    border-top: solid 3px #2ed5ea;
 }
 
 .uk-mega-card > ul.uk-mega-dropdown-nav {
@@ -422,115 +480,217 @@ Header bottom style
 }
 
 .main-menu-wrapper > ul > li > a {
-    height:50px;
-    min-height:auto;
+    height: 50px;
+    min-height: auto;
 }
-.main-menu > li > a{
+
+.main-menu > li > a {
     padding: 0 25px;
 }
-.uk-secondary-nav-dropdown{
-    border-top:solid 3px #2ed5ea;
+
+.uk-secondary-nav-dropdown {
+    border-top: solid 3px #2ed5ea;
 }
-.uk-secondary-nav-dropdown-button{
-    height:50px;
-    border-top:none;
-    border-bottom:none;
+
+.uk-secondary-nav-dropdown-button {
+    height: 50px;
+    border-top: none;
+    border-bottom: none;
 }
-.uk-partnership-button{
+
+.uk-partnership-button {
     color: #ffffff !important;
-    margin-top:10px;
+    margin-top: 10px;
 }
+
 .uk-secondary-nav-dropdown-button:hover, .uk-secondary-nav-dropdown-button:active, .uk-secondary-nav-dropdown-button:focus {
     color: #666 !important;
-    background-color:#f8f8f8;
-    border-color:#eeeeee;
+    background-color: #f8f8f8;
+    border-color: #eeeeee;
 }
 
 /*
 Main section General styles
 =============================================
 */
-.slideset-title{
-    position:relative;
-    padding-top:5px;
-}
-.slideset-title a{
-    position:absolute;
-    left:0;
-    top:0;
-    font-size:14px;
+.slideset-title {
+    position: relative;
+    padding-top: 5px;
 }
 
-
+.slideset-title a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+}
 
 /*
 Main Page Product Cards Styles
 =============================================
 */
 
-.slider-card-wrapper a{
+.slider-card-wrapper a {
     text-decoration: none;
 }
 
-.default-product-card{
-margin:30px 10px;
+.default-product-card {
+    margin: 30px 10px;
 }
 
-.default-product-card .uk-card-header{
-    height:210px !important;
-    border-bottom-color:#eeeeee;
+.default-product-card .uk-card-header {
+    height: 210px !important;
+    border-bottom-color: #eeeeee;
 }
-.default-product-card .uk-card-header .uk-product-image{
-    height:100%;
+
+.default-product-card .uk-card-header .uk-product-image {
+    height: 100%;
     vertical-align: middle;
-    line-height:210px;
+    line-height: 210px;
 }
-.default-product-card .uk-card-header img{
-    max-height:210px !important;
+
+.default-product-card .uk-card-header img {
+    max-height: 210px !important;
 
 }
-.default-product-card .uk-product-title h1{
-    font-size:14px;
+
+.default-product-card .uk-product-title h1 {
+    font-size: 14px;
     font-weight: bold;
-    height:32px;
+    height: 32px;
 }
 
-.default-product-card .uk-producer-name h2{
-    font-size:13px;
-    height:32px;
-    color:#999999;
-    margin-bottom:0;
-}
-.default-product-card .uk-card-footer{
-    border-top-color:#eeeeee;
-}
-.default-product-card .uk-main-price{
-    height:21px;
-}
-.default-product-card .uk-final-price{
-    font-size:16px;
-
+.default-product-card .uk-producer-name h2 {
+    font-size: 13px;
+    height: 32px;
+    color: #999999;
+    margin-bottom: 0;
 }
 
+.default-product-card .uk-card-footer {
+    border-top-color: #eeeeee;
+}
 
+.default-product-card .uk-main-price {
+    height: 21px;
+}
 
+.default-product-card .uk-final-price {
+    font-size: 16px;
 
+}
 
+.default-product-card .uk-card-body .uk-icon.fa-icon svg {
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+}
 
+/*
+Footer Styles
+=============================================
+*/
+#footer {
+    background-color: white;
+}
 
+#footer > div {
+    border-top: solid 1px #eeeeee;
+}
 
+.footer-bottom-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.footer-bottom-nav li {
+    float: right;
+}
 
+.footer-bottom-nav li a {
+    padding: 0 10px;
+    font-size: 12px;
+}
 
+.footer-about-wrapper > * {
+    /*padding:5px 20px;*/
+}
 
+.footer-about-content {
+    text-align: justify;
+}
 
+.cert-wrapper {
+    padding: 5px;
+    border: solid 1px #eeeeee;
+}
 
+.newsletter-social, .footer-main-navigation-wrapper {
+    border-bottom: solid 1px #eeeeee;
+}
 
+.app-download-title {
+    line-height: 40px;
+}
 
+.support-contact {
+    border-bottom: dashed 1px #cccccc;
+}
 
+.support-phone-email span.uk-icon {
+    vertical-align: top;
+}
 
+/*
+Product detail page styles
+=============================================
+*/
 
+.breadcrumb-container ul li.breadcrumb-home span.uk-icon {
+    vertical-align: top;
+}
 
+.product-image-slider{
+    /*border:solid 1px #e8e8e8;*/
+    border-radius:10px;
+}
+.product-image-gallery .product-gallery-list li img {
+    max-height: 400px;
+    max-width: 300px;
+    vertical-align: middle;
+}
 
+.product-gallery-list .gallery-image-wrapper {
+    text-align: center;
+    height: 500px;
+    background-color: #f8f8f8;
+    display: block;
+    line-height: 500px;
+}
 
+.product-name-wrapper .product-name{
+    font-size:20px;
+    font-weight: bold;
+    color:#666666;
+}
 
+.product-rating-wrapper .uk-iconnav{
+    display:inline-flex;
+}
+.rating-show-wrapper .vote-count{
+    padding:0;
+    margin:0;
+    font-size:12px;
+    margin-top:4px;
+}
+.rating-show-wrapper .uk-iconnav li span{
+    color:#888888;
+}
+.rating-show-wrapper .uk-iconnav li.rated span{
+    color:#f0506e;
+}
+.book-main-info-wrapper{
+    color:#888888;
+}
