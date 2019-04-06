@@ -691,6 +691,58 @@ Product detail page styles
 .rating-show-wrapper .uk-iconnav li.rated span{
     color:#f0506e;
 }
-.book-main-info-wrapper h5{
+.product-main-info-wrapper h5{
     color:#888888;
+}
+
+.final-price .discount-value{
+    font-size:14px;
+    color:#444444;
+}
+.product-type-wrapper .book-type-button span{
+    line-height:18px;
+    font-size:12px;
+}
+
+.product-type-wrapper .book-type-button.selected-product-type{
+    border-color:#23c6da;
+    color:#23c6da;
+    font-weight: bolder;
+}
+.product-quantity-wrapper .qty-input{
+    font-size:18px;
+    background-color:rgb(221,221,221);
+    border:none;
+}
+
+.additional-info-tab::before{
+    border:none;
+}
+.additional-info-tab > li > a{
+    transition: all 0.3s;
+    border:none;
+    font-size:28px;
+    font-weight:700;
+    padding-left:40px;
+    padding-right:40px;
+    color:#ddd;
+}
+.additional-info-tab > li.uk-active > a{
+    border:none;
+    color:#666;
+}
+
+.product-additional-content-wrapper .product-description > div{
+    border:solid 1px #eee;
+
+}
+
+.product-additional-content-wrapper .product-description > div h3.product-description-section-title{
+    font-size:14px;
+    font-weight: normal;
+    margin:0;
+    padding:10px;
+    color:#888;
+    margin-bottom:10px;
+    border-bottom:solid 1px #eee;
 }
