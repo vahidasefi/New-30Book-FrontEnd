@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>30Book Product Detail Page</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body class="bg-white">
+<div id="header">
+    <div id="header-top">
+        <div class="header-top-banner">
+            <div class="uk-container uk-container-expand uk-padding-remove">
+                <!--<a href="#" class="top-banner-wrapper" style="background: #007997 url('https://via.placeholder.com/1920x70/007997/fff.png?text=Top+Banner+Adv');" ></a>-->
+            </div>
+        </div>
+        <div class="header-top-main">
+            <div class="uk-container uk-container-expand">
+                <div class="uk-grid uk-child-width-1-2">
+                    <div class="top-right-nav">
+                        <ul>
+                            <li>به فروشگاه آنلاین 30بوک خوش آمدید.</li>
+                        </ul>
+                    </div>
+                    <div class="top-left-nav">
+                        <ul>
+                            <li><a href="#">قوانین و مقررات</a></li>
+                            <li><a href="#">ثبت شکایات</a></li>
+                            <li><a href="#">سوالات متداول</a></li>
+                            <li><a href="#">راهنما</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header-main">
+        <div class="header-main">
+            <div class="uk-container uk-container-large">
+                <div class="uk-grid uk-grid-small">
+                    <div class="logo">
+                        <div class="logo-wrapper">
+                            <a href="#">
+                                <img src="assets/images/logo.png" alt="فروشگاه آنلاین 30بوک">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search uk-width-expand">
+                        <div class="search-wrapper">
+                            <div class="horizontal-search">
+                                <form action="" class="" id="search-form">
+                                    <div class="uk-grid uk-grid-collapse uk-flex-center">
+                                        <div class="uk-width-auto">
+                                            <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-fixed-width-100"
+                                                    type="button">
+                                                <span>همه موارد</span>
+                                                <span class="uk-icon" uk-icon="chevron-down"></span>
+                                            </button>
+                                            <div uk-dropdown="mode: click">
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li class="uk-nav-header">بر اساس نام</li>
+                                                    <li><a href="#">نام ناشر</a></li>
+                                                    <li><a href="#">نام نویسنده</a></li>
+                                                    <li><a href="#">نام مترجم</a></li>
+                                                    <li class="uk-nav-header">بر اساس نوع</li>
+                                                    <li><a href="#">کتاب چاپی</a></li>
+                                                    <li><a href="#">کتاب صوتی</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">بازی و سرگرمی</a></li>
+                                                    <li><a href="#">کالای فرهنگی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <input type="text" class="uk-input uk-fixed-width-450" title="جستجو کنید"
+                                                   placeholder="عنوان مورد نظرتان را جستجو نمایید..."
+                                                   name="search-query"
+                                                   id="search-query">
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <button class="uk-button uk-button-primary search-submit-button uk-fixed-width-50">
+                                                <span class="uk-icon" uk-icon="search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-basket">
+                        <div class="uk-grid uk-grid-collapse">
+                            <div class="account-wrapper">
+                                <div class="account-button">
+                                    <button class="uk-button uk-padding-h10 uk-button-default" type="button">
+                                        <span uk-icon="user"></span>
+                                        <span>حساب کاربری</span>
+                                    </button>
+                                    <div uk-dropdown="pos: bottom-justify">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li><a href="#"
+                                                   class="uk-button uk-button-primary uk-text-white login-button"><i
+                                                    uk-icon="sign-in" class="uk-icon"></i> وارد
+                                                شوید</a></li>
+                                            <li><a href="#"
+                                                   class="uk-button uk-button-small uk-text-danger uk-text-bold  register-button">عضویت
+                                                و ثبت نام</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#"><span uk-icon="cog"></span> مدیریت حساب کاربری</a></li>
+                                            <li><a href="#"><span uk-icon="tag"></span> سفارشات من</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#"><span uk-icon="heart"></span> علاقه مندی ها</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-wrapper">
+                                <button class="uk-button uk-button-default basket-button uk-button-transparent">
+                                    <span class="uk-badge">3</span>
+                                    <span uk-icon="cart">
+
+                                    </span>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header-bottom">
+        <div class="header-bottom">
+            <div class="uk-container uk-container-large">
+                <div class="main-navigation-wrapper uk-grid uk-grid-collapse">
+                    <div class="categories-dropdown-wrapper uk-fixed-width-200">
+                        <button class="uk-button uk-button-default category-dropdown-button uk-fixed-width-200 uk-text-muted"
+                                type="button">
+                            <span uk-icon="list"></span>
+                            <span>همه دسته بندی ها</span>
+                        </button>
+                        <div class="uk-mega-card uk-padding-15 expanded"
+                             uk-dropdown="pos: bottom-right; mode: hover; offset: 10">
+                            <ul class="uk-nav uk-dropdown-nav uk-mega-dropdown-nav first-gen">
+                                <li class="uk-nav-has-child uk-active">
+                                    <a href="#">کتاب عمومی
+                                        <i class="uk-icon" uk-icon="icon: chevron-right; ratio: 0.7"></i>
+                                    </a>
+
+                                    <div class="uk-sub-category-container">
+                                        <h3 class="uk-sub-category-title uk-text-primary">کتاب عمومی</h3>
+                                        <div class="uk-grid uk-grid-small uk-child-width-1-3">
+                                            <div>
+                                                <ul class="uk-nav uk-dropdown-nav uk-second-gen-nav">
+                                                    <li><a href="#">ادبیات</a></li>
+                                                    <li><a href="#">اقتصاد</a></li>
+                                                    <li><a href="#">پزشکی</a></li>
+                                                    <li><a href="#">تاریخ</a></li>
+                                                    <li><a href="#">حقوق</a></li>
+                                                    <li><a href="#">روانشناسی</a></li>
+                                                    <li><a href="#">زندگی نامه و خاطره</a></li>
+                                                    <li><a href="#">سبک زندگی</a></li>
+                                                    <li><a href="#">سیاست</a></li>
+                                                    <li><a href="#">کسب و کار و تجارت</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-dropdown-nav uk-second-gen-nav">
+                                                    <li><a href="#">سینما و تئاتر</a></li>
+                                                    <li><a href="#">علمی</a></li>
+                                                    <li><a href="#">طنز</a></li>
+                                                    <li><a href="#">علوم اجتماعی</a></li>
+                                                    <li><a href="#">فرهنگ، مرجع، دایرة المعارف</a></li>
+                                                    <li><a href="#">فلسفه</a></li>
+                                                    <li><a href="#">مذهبی</a></li>
+                                                    <li><a href="#">هنر</a></li>
+                                                    <li><a href="#">ورزشی</a></li>
+                                                    <li><a href="#">کامپیوتر و تکنولوژی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="uk-nav-banner-container uk-text-center">
+                                                <a href="#" class="uk-nav-banner">
+                                                    <img src="https://via.placeholder.com/215x280.png?text=Navigation+Banner"
+                                                         alt="banner">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">کتاب کمک درسی</a>
+                                </li>
+                                <li>
+                                    <a href="#">کتاب زبان خارجه</a>
+                                </li>
+                                <li>
+                                    <a href="#">کتاب کودک و نوجوان</a>
+                                </li>
+                                <li class="uk-nav-divider"></li>
+                                <li>
+                                    <a href="#">کالای فرهنگی</a>
+                                </li>
+                                <li>
+                                    <a href="#">بازی و سرگرمی</a>
+                                </li>
+                                <li class="uk-nav-divider"></li>
+                                <li>
+                                    <a href="#" class="uk-text-bold"><span uk-icon="fa-headphones-alt"></span> کتاب صوتی</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-text-bold"><span uk-icon="fa-tablet-android"></span> کتاب
+                                        الکترونیکی</a>
+                                </li>
+                                <li class="uk-nav-divider"></li>
+                                <li>
+                                    <a href="#"
+                                       class="uk-button uk-button-small  uk-button-danger uk-nav-stock-book-button uk-text-bold"><span
+                                            uk-icon="fa-book-open"></span> کتاب دست دوم</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu-wrapper uk-width-expand ">
+                        <ul class="uk-navbar-nav main-menu">
+                            <li class="uk-text-bold"><a href="#"><span class="uk-text-primary" uk-icon="bell"></span>
+                                فروش ویژه</a></li>
+                            <li class="uk-text-bold"><a href="#">پرفروش ها</a></li>
+                            <li class="uk-text-bold"><a href="#">تازه ها</a></li>
+                            <li class="uk-text-bold"><a href="#">پربازدیدها</a></li>
+                        </ul>
+                    </div>
+                    <div class="secondary-navigation-wrapper">
+                        <div class="uk-grid uk-grid-small">
+                            <div class="secondary-navigation-dropdown uk-fixed-width-200">
+                                <button class="uk-button uk-button-default uk-fixed-width-200 uk-secondary-nav-dropdown-button"
+                                        type="button">
+                                    <span uk-icon="chevron-down"></span>
+                                    <span>دسترسی سریع</span>
+                                </button>
+                                <div class="uk-dropdown uk-secondary-nav-dropdown"
+                                     uk-dropdown="pos: bottom-justify; mode: click;">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#">مجله 30بوک</a></li>
+                                        <li><a href="#">پادکست 30بوک</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">درباره 30بوک</a></li>
+                                        <li><a href="#">تماس با 30بوک</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#"
+                                               class="uk-button uk-button-primary uk-button-small uk-partnership-button">کارت
+                                            هدیه</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div id="main-top">
+            <div class="uk-container uk-container-small uk-margin-large-top uk-margin-large-bottom">
+                <div class="uk-alert-danger" uk-alert>
+                    <a class="uk-alert-close" uk-close></a>
+                    <p>متن خطای تستی.........</p>
+                </div>
+                <div class="uk-flex-center login-register-grid" uk-grid="">
+                    <div class="uk-width-1-2">
+                        <h3 class="uk-text-center">
+                            <span uk-icon="icon: lock; ratio: 2;"></span>
+                        </h3>
+                        <h3 class="uk-text-center uk-margin-remove">
+                            ثبت نام در سایت
+                        </h3>
+                        <hr>
+                        <form action="" class="uk-form-stacked">
+                            <div class="uk-margin">
+                                <label for="email-address" class="uk-form-label">نشانی ایمیل</label>
+                                <div class="uk-form-controls">
+                                    <input type="text" class="uk-input english-numeral" placeholder="نشانی ایمیل" name="email-address" id="email-address">
+                                </div>
+                                <p class="form-hint">توضیح در مورد ورودی</p>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="mobile" class="uk-form-label">شماره همراه</label>
+                                <div class="uk-form-controls">
+                                    <input type="text" class="uk-input english-numeral" placeholder="شماره همراه" name="mobile" id="mobile">
+                                </div>
+                                <p class="form-hint">توضیح در مورد ورودی</p>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="password" class="uk-form-label">رمز عبور</label>
+                                <div class="uk-form-controls">
+                                    <input type="password" class="uk-input" placeholder="رمز عبور شما" name="password" id="password">
+                                </div>
+                                <p class="form-hint">توضیح در مورد ورودی</p>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="password2" class="uk-form-label">تکرار رمز عبور</label>
+                                <div class="uk-form-controls">
+                                    <input type="password" class="uk-input" placeholder="تکرار رمز عبور شما" name="password2" id="password2">
+                                </div>
+                                <p class="form-hint">توضیح در مورد ورودی</p>
+                            </div>
+                            <div class="uk-margin-medium">
+                                <button class="uk-button uk-button-primary uk-width-1-1">
+                                    <i uk-icon="icon: lock;"></i> ثبت نام
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="uk-margin">
+                                <p> حساب کاربری دارید؟ <a href="#" class="uk-button uk-button-link">وارد شوید</a></p>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="main-middle">
+
+    </div>
+</div>
+<div id="footer">
+    <div id="footer-top">
+        <div class="support-contact">
+            <div class="uk-container support-container uk-padding-v20">
+                <div class="uk-grid" uk-grid="">
+                    <div class="uk-width-1-2">
+                        <h4 class="support-title uk-text-muted">
+                            <span class="uk-icon uk-text-primary" uk-icon="icon: fa-user-headset; ratio: 0.06;"></span>
+                            <span>همراه شما هستیم | با ما تماس بگیرید</span>
+                        </h4>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-grid support-phone-email" uk-grid="">
+                            <div>
+                                <p><span uk-icon="icon: receiver; ratio: 1.2;" class="uk-icon uk-text-primary"></span>
+                                    تلفن تماس: 66494109-021</p>
+                            </div>
+                            <div>
+                                <p class="english-numeral"><span uk-icon="icon: mail; ratio: 1.2;"
+                                                                 class="uk-icon uk-text-primary"></span> ایمیل
+                                    پشتیبانی: support@30book.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="application-download">
+            <div class="uk-container uk-padding-v20">
+                <div class="uk-grid" uk-grid="">
+                    <div class="uk-width-1-2">
+                        <h3 class="uk-text-bold uk-text-center uk-text-muted app-download-title">اپلیکیشن 30بوک | آسانتر
+                            از همیشه</h3>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <p class="uk-text-center">
+                            <a href="#" class="uk-button bg-google-play app-download"><span class="uk-icon"
+                                                                                            uk-icon="icon: fa-google-play; ratio: 0.05;"></span>
+                                <span>گوشی های اندروید</span></a>
+                            <a href="#" class="uk-button bg-app-store app-download"><span class="uk-icon"
+                                                                                          uk-icon="icon: fa-app-store-ios; ratio: 0.05;"></span>
+                                <span>گوشی های اپل</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-main" class="">
+        <div class="uk-container uk-container uk-padding-v20 footer-main-navigation-wrapper ">
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-4 footer-navigation-wrapper">
+                    <h5>محصولات</h5>
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="#">کتاب چاپی</a></li>
+                        <li><a href="#">کتاب صوتی</a></li>
+                        <li><a href="#">کتاب الکترونیکی</a></li>
+                        <li><a href="#">بازی و سرگرمی</a></li>
+                        <li><a href="#">کتاب دست دوم</a></li>
+                        <li><a href="#">تابلو تصویر</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-4 footer-navigation-wrapper">
+                    <h5>دسته بندی موضوعی</h5>
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="#">کتاب عمومی</a></li>
+                        <li><a href="#">کمک تحصیلی</a></li>
+                        <li><a href="#">کودک و نوجوان</a></li>
+                        <li><a href="#">زبان خارجه</a></li>
+                        <li><a href="#">بازی و اسباب بازی</a></li>
+                        <li><a href="#">کالای فرهنگی</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-4 footer-navigation-wrapper">
+                    <h5>بخش های 30بوک</h5>
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="#">مجله 30بوک</a></li>
+                        <li><a href="#">پادکست 30بوک</a></li>
+                        <li><a href="#">کارت هدیه</a></li>
+                        <li><a href="#">کدهای تخفیف</a></li>
+                        <li><a href="#">نشانی فروشگاه ها</a></li>
+                        <li><a href="#">انتشارات</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-4 footer-navigation-wrapper">
+                    <h5>پیوندهای مفید</h5>
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="#">فرصت های شغلی</a></li>
+                        <li><a href="#">ثبت شکایات</a></li>
+                        <li><a href="#">قوانین و مقررات</a></li>
+                        <li><a href="#">سیاست حفظ حریم خصوصی</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">خرید عمده</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container uk-container uk-padding-v20 newsletter-social">
+            <div class="uk-grid" uk-grid="">
+                <div class="uk-width-1-2 newsletter-form-wrapper">
+                    <h4 class="uk-text-center">خبرنامه 30بوک | عضو شوید، تخفیف دریافت نمایید</h4>
+                    <div class="newsletter-form">
+                        <form action="#" class="uk-grid-small uk-grid" uk-grid="">
+                            <div class="uk-width-2-3">
+                                <label class="uk-form-label" for="newsletter-email"></label>
+                                <input class="uk-input" name="newsletter-email" id="newsletter-email" type="email"
+                                       placeholder="نشانی ایمیل شما">
+                            </div>
+                            <div class="uk-width-1-3">
+                                <input type="submit" class="uk-input uk-button-primary" value="عضویت در خبرنامه">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-width-1-2 social-network-wrapper">
+                    <h4 class="uk-text-center">شبکه های اجتماعی | با ما همراه باشید</h4>
+                    <p uk-margin class="uk-margin uk-text-center">
+                        <a href="#" class="uk-button social-button bg-facebook"><span uk-icon="icon: facebook;"></span></a>
+                        <a href="#" class="uk-button social-button bg-google"><span uk-icon="icon: google;"></span></a>
+                        <a href="#" class="uk-button social-button bg-instagram"><span
+                                uk-icon="icon: instagram;"></span></a>
+                        <a href="#" class="uk-button social-button bg-telegram"><span
+                                uk-icon="icon: fa-telegram; ratio: 0.05;"></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container uk-container uk-padding-v20 ">
+            <div class="uk-grid" uk-grid="">
+                <div class="uk-width-2-3 footer-about-wrapper">
+                    <h4 class="footer-about-title uk-text-muted uk-text-bold">فروشگاه آنلاین کتاب 30بوک</h4>
+                    <p class="uk-text-muted footer-about-content">
+                        همین چند وقت پیش (آخرهای سال 1394) بود که چند تا جوان، صمیمی، پرانرژی و لبریز از ایده، به‌عنوان
+                        یک دارودسته‌ی تبعیدیِ کرمِکتاب دور هم جمع شدیم تا به رویای معرفی و فرستادن کتاب به دوردست‌ترین
+                        کتاب‌خوارهای ایران برسیم. ما نه عینک گرد می‌زنیم، نه سبیل بلند داریم (به جز یک مورد) و نه زیاد
+                        اهل کافه رفتنیم.
+                        <br><br>
+                        ما تیم بچه‌معمولی‌های 30‌بوک هستیم: ذله‌کننده‌ی سرمایه‌گذارهای دست‌به‌عصا، حامیان تمام‌عیار
+                        احمقانه‌ترین و جسورانه‌ترین ایده‌ها، و کَنه‌ی حل غیرممکن‌ترین مسئله‌ها. اگر جوانید (دل‌تان را
+                        می‌گوییم!)، یک جای خالی هم برای شما توی بوفه کنار گذاشته‌ایم. به دنیای 30بوک خوش آمدید!
+                    </p>
+                </div>
+                <div class="uk-width-1-3 footer-certs-wrapper">
+                    <div class="uk-grid" style="direction: ltr;" uk-grid="">
+                        <div class="cert-wrapper namad ">
+                            <a href="#" class="img"><img src="assets/images/namad.png" alt="namad"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer-bottom" class="bg-gray-5">
+        <div class="uk-container copyright-container">
+            <div class="uk-padding-v20">
+                <div class="uk-grid uk-child-width-1-2" uk-grid="">
+                    <div><p>&copy; 1398 | تمامی حقوق این سایت متعلق به انتشارات صدای معاصر میباشد.</p></div>
+                    <div>
+                        <div class="uk-footer-bottom-navigation">
+                            <ul class="footer-bottom-nav uk-float-left">
+                                <li><a href="#">قوانین و مقررات</a></li>
+                                <li><a href="#">حریم شخصی</a></li>
+                                <li><a href="#">حقوق مالکیت</a></li>
+                                <li><a href="#">نقشه سایت</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/main-script.js"></script>
+</body>
+</html>

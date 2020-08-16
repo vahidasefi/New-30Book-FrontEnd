@@ -4,6 +4,7 @@ Created by Vahid Asefi
  */
 @import "../fonts/iranyekan/css/fontiran.css";
 @import "../fonts/iransans/css/fontiran.css";
+@import "../fonts/englishyekan/css/fontiran.css";
 
 /*
 General Styles
@@ -19,9 +20,35 @@ a.uk-link:hover {
     text-decoration: none;
 }
 
+.uk-button-success {
+    background-color: #4aa84e;
+    border: solid 1px transparent;
+    color: #fff;
+}
+
+.uk-button-success:hover, .uk-button-success:focus {
+    background-color: #2e9e30;
+    color: #fff;
+}
+
 body {
     background-color: #fafafa;
     min-width: 1200px !important;
+}
+
+.english-numeral {
+    font-family: englishyekan, sans-serif !important;
+}
+
+p.form-hint {
+    font-size: 12px;
+    margin: 0;
+    color: #888888;
+}
+
+.four-o-four {
+    font-size: 10rem;
+
 }
 
 /*
@@ -658,6 +685,10 @@ Product detail page styles
     border-radius: 10px;
 }
 
+.product-image-gallery .add-to-wishlist-button:hover {
+    color: #888;
+}
+
 .product-image-gallery .product-gallery-list li img {
     max-height: 400px;
     max-width: 300px;
@@ -798,17 +829,17 @@ dl.product-data-sheet {
     font-size: 13px;
 }
 
-.product-data-sheet dd{
-    font-weight:normal;
-    font-size:13px;
-    color:#888888;
+.product-data-sheet dd {
+    font-weight: normal;
+    font-size: 13px;
+    color: #888888;
 }
 
-.product-data-sheet dd > a:hover{
+.product-data-sheet dd > a:hover {
     text-decoration: none;
 }
 
-.product-data-sheet dt.name, .product-data-sheet dd.value{
+.product-data-sheet dt.name, .product-data-sheet dd.value {
     -webkit-box-flex: 1;
     box-flex: 1;
     -moz-flex: 1 0 40%;
@@ -821,44 +852,258 @@ dl.product-data-sheet {
     word-break: break-word;
     margin-bottom: .625rem;
     font-size: 12px;
-    border-radius:3px;
-}
-.product-data-sheet dt.name{
-    margin-left:.625rem;
-    font-weight:bold;
-    color:#888888;
+    border-radius: 3px;
 }
 
-.product-data-sheet dt.name:nth-last-of-type(2n+1), .product-data-sheet dd.value:nth-last-of-type(2n+1){
-    background-color:#f8f8f8;
-}
-
-.product-review-form .user-rating-wrapper span{
+.product-data-sheet dt.name {
+    margin-left: .625rem;
     font-weight: bold;
-    color:#999999;
+    color: #888888;
 }
-.product-review-form .user-rating-wrapper ul{
-    margin-right:30px;
-    vertical-align:sub;
+
+.product-data-sheet dt.name:nth-last-of-type(2n+1), .product-data-sheet dd.value:nth-last-of-type(2n+1) {
+    background-color: #f8f8f8;
 }
-.product-review-form .user-rating-wrapper ul li{
-    float:right;
-    padding-right:5px;
-    color:#888888;
+
+.product-review-form .user-rating-wrapper span {
+    font-weight: bold;
+    color: #999999;
+}
+
+.product-review-form .user-rating-wrapper ul {
+    margin-right: 30px;
+    vertical-align: sub;
+}
+
+.product-review-form .user-rating-wrapper ul li {
+    float: right;
+    padding-right: 5px;
+    color: #888888;
     cursor: pointer;
 }
-.product-comment-list .comment-date{
-    font-size:14px;
+
+.product-comment-list .comment-date {
+    font-size: 14px;
 }
-.user-rated-stars{
-    width:200px;
+
+.user-rated-stars {
+    width: 200px;
 }
-.user-rated-stars li{
-    float:right;
+
+.user-rated-stars li {
+    float: right;
 }
-.user-rated-stars li.rated span{
-    color:#f0506e
+
+.user-rated-stars li.rated span {
+    color: #f0506e
 }
-.related-products-slider .uk-slider-container{
-    padding:auto 50px;
+
+.related-products-slider .default-product-card {
+    margin: 0;
+}
+
+.related-products-slider .product-card-wrapper {
+    padding: 30px 10px;
+}
+
+.add-to-wishlist-button {
+    border: none;
+    background: none;
+    background-color: transparent;
+    font-family: iranyekan, sans-serif;
+    color: #f0506e;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.add-to-wishlist-button:hover {
+    color: #888888;
+}
+
+/*
+Cart Page Style
+=============================================
+*/
+.basket-overview-wrapper {
+    padding-top: 50px;
+}
+
+.cart-summary {
+    border: solid 1px #23c6da;
+}
+
+.cart-summary .uk-card-title {
+    font-size: 16px;
+}
+
+table.cart-basket-table thead th {
+    font-size: 16px;
+    color: #aaa;
+}
+
+table.cart-basket-table .basket-qty-button {
+    padding: 0 8px;
+    line-height: 14px;
+    color: #333;
+    background-color: #eee;
+}
+
+table.cart-basket-table .basket-qty-input {
+    height: 30px;
+    background-color: #eee;
+    border-color: #eee;
+}
+
+/*
+Checkout Page Style
+=============================================
+*/
+.checkout-levels-card {
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+
+.checkout-levels {
+    list-style: none;
+    display: inline-block;
+}
+
+.checkout-levels li {
+    float: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #888888;
+}
+
+.checkout-levels li .number {
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    line-height: 28px;
+    background-color: white;
+    border: solid 2px #23c6da;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.checkout-levels li.active .number {
+    background-color: #23c6da;
+    color: white;
+}
+
+.checkout-levels li.active .text {
+    color: #23c6da;
+}
+
+
+.checkout-table tfoot {
+    border-top: solid 3px #eeeeee;
+}
+
+.checkout-table tfoot span.foot-name, .checkout-table tfoot span.foot-value {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/*checkout section two*/
+.delivery-icon {
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    margin-left: 15px;
+}
+
+.delivery-subtitle {
+    display: block;
+}
+
+.saved-address-list li > div {
+    display: inline-block;
+    float: right;
+}
+
+.saved-address-list li > div p {
+    margin: 0;
+}
+
+.saved-address-list li > div p.address {
+    margin-bottom: 10px;
+}
+
+.parcel-list .parcel-type {
+    display: inline-block;
+}
+
+.parcel-list .parcel-price-wrapper {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.parcel-list .parcel-price-wrapper > p {
+    text-align: center;
+}
+
+.parcel-list .parcel-price-wrapper p.parcel-price {
+    font-weight: bold;
+}
+
+/*checkout section three*/
+.bank-portal-list .bank-portal .bank-icon {
+    width: 64px;
+    height: 64px;
+}
+
+
+/* Search Section */
+.search-subject h4 {
+    margin: 0;
+}
+
+/* user profile section */
+
+.user-profile-container .uk-tab > li > a {
+    font-size: 1.2rem;
+}
+
+.user-profile-container .order-history-accordion .uk-accordion-title::before {
+    background-image: none !important;
+}
+
+.user-profile-container .order-history-accordion .uk-accordion-title {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: all .5s;
+}
+
+.user-profile-container .order-history-accordion.uk-accordion > li {
+    border-bottom: solid 1px #eaeaea;
+    padding-bottom: 10px;
+}
+
+.user-profile-container .order-history-accordion.uk-accordion > li.uk-open .uk-accordion-title {
+    background-color: #f2f2f2;
+}
+
+.user-profile-container .order-history-accordion.uk-accordion .uk-accordion-title h5, .user-profile-container .uk-accordion .uk-accordion-title span {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.accordion-order-table thead tr, .accordion-order-table tbody tr {
+    border-bottom: solid 1px #eaeaea;
+}
+
+.accordion-order-table h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.accordion-order-table h4.product-price {
+    font-size: .9rem;
+    margin: 0;
+    color: #888;
 }
